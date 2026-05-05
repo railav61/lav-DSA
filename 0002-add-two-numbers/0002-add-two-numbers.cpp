@@ -11,55 +11,29 @@
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode *t, *u, *r, *s;
-        ListNode* sum = NULL;
-        r = sum;
-        t = l1;
-        u = l2;
-        int car=0;
-        while (t != NULL || u != NULL) {
-            struct ListNode* temp = new ListNode();
-            if (t == NULL && u != NULL) {
-                temp->val = u->val + car;
-                car = 0;
-                temp->next = NULL;
-                u = u->next;
-            } else if (t != NULL && u == NULL) {
-                temp->val = t->val + car;
-                car = 0;
-                temp->next = NULL;
-                t = t->next;
-            } else {
-                temp->val = t->val + u->val + car;
-                car = 0;
-                temp->next = NULL;
-                t = t->next;
-                u = u->next;
-            }
-            if (temp->val >= 10) {
-                car = temp->val/10;
-                temp->val = temp->val % 10;
-            }
-            if (sum == NULL) {
-                sum = temp;
-            }
-            else {
-                r = sum;
-                while (r->next!=NULL)
-                    r = r->next;
-                r->next = temp;
-            }
-        }
-        if (car >= 1) {
-            struct ListNode* temp = new ListNode();
-            temp->val = car;
-            temp->next = NULL;
-            r=sum;
-            while (r->next!=NULL)
-                    r = r->next;
-            r->next = temp;
+        ListNode* temp = new ListNode();
+        ListNode* x = temp;
+        int car = 0;
+        while (l1 != nullptr || l2 != nullptr || car != 0) {
+            int val1 = (l1 != nullptr) ? l1->val : 0;
+            int val2 = (l2 != nullptr) ? l2->val : 0;
+
+            int sum = val1 + val2 + car;
+
+            car = sum / 10;
+            sum = sum % 10;
+
+            x->next = new ListNode(sum);
+            x = x->next;
+            if (l1 != nullptr)
+                l1 = l1->next;
+            if (l2 != nullptr)
+                l2 = l2->next;
         }
 
-        return sum;
+        ListNode* res = temp->next;
+        temp->next = nullptr;
+        delete temp;
+        return res;
     }
 };
