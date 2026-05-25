@@ -6,6 +6,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/railav61/lav-DSA/tree/main/0001-two-sum/) | Easy |
+| [0704-binary-search](https://github.com/railav61/lav-DSA/tree/main/0704-binary-search/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -23,4 +24,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/railav61/lav-DSA/tree/main/0002-add-two-numbers/) | Medium |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0704-binary-search](https://github.com/railav61/lav-DSA/tree/main/0704-binary-search/) | Easy |
 <!---LeetCode Topics End-->
