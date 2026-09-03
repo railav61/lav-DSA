@@ -30,4 +30,16 @@
 | ------- | ------- |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/railav61/lav-DSA/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0704-binary-search](https://github.com/railav61/lav-DSA/tree/main/0704-binary-search/) | Easy |
+## Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0958-check-completeness-of-a-binary-tree](https://github.com/railav61/lav-DSA/tree/main/0958-check-completeness-of-a-binary-tree/) | Medium |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0958-check-completeness-of-a-binary-tree](https://github.com/railav61/lav-DSA/tree/main/0958-check-completeness-of-a-binary-tree/) | Medium |
+## Binary Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0958-check-completeness-of-a-binary-tree](https://github.com/railav61/lav-DSA/tree/main/0958-check-completeness-of-a-binary-tree/) | Medium |
 <!---LeetCode Topics End-->
